@@ -78,5 +78,13 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+
+app.get('/aboutUs', async (req, res) => {
+  res.json({
+    text: 'Hi my name is Haelyn and I am taking the Agile Dev Ops course this fall 2026 semester. I am a Senior at NYU and am interested in working in the computer science industry. Some of my hobbies include painting, reading, playing the NYTimes games, and traveling. I work at the High Speed Research Network, a lab at NYU-IT where I work on developing the HSRN Dashboard, a dashboard for researchers to manage various resources that run on the High Speed Research Network.',
+    imageUrl: '/photo.png',
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
